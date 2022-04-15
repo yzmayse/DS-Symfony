@@ -17,4 +17,49 @@ class TacheControlleController extends AbstractController
             'controller_name' => 'TacheControlleController',
         ]);
     }
+     /**
+     * @Route("/ListeTache", name="liste")
+     */
+    public function ListeTaches(): Response
+    {
+        return $this->render('tache_controlle/index.html.twig', [
+            'controller_name' => 'TacheControlleController',
+        ]);
+    }
+    /**
+     * @Route("/add_tache", name="add_tache")
+     */
+    public function taches(): Response
+    {
+        return $this->render('tache_controlle/index.html.twig', [
+            'controller_name' => 'TacheControlleController',
+        ]);
+    }
+    /**
+     * @Route("/tache/controlle", name="suprimer")
+     */
+    public function suprTaches(): Response
+    {
+        return $this->render('tache_controlle/index.html.twig', [
+            'controller_name' => 'TacheControlleController',
+        ]);
+    }
+    /**
+     * @Route("/creer", name="creer")
+     */
+    public function creerTaches(): Response
+    {
+        return $this->render('tache_controlle/index.html.twig', [
+            'controller_name' => 'TacheControlleController',
+        ]);
+    }
+    /**
+     * @Route("/insert", name="insert")
+     */
+    public function inserTaches(): Response
+    {
+        return $this->render('tache_controlle/index.html.twig', [
+            'controller_name' => 'TacheControlleController',
+        ]);
+    }
 }
